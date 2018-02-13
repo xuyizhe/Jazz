@@ -12,6 +12,13 @@ let ``mutipleExpr' works`` () =
   Assert.Equal(11, mutipleExpr' 11)
 
 [<Fact>]
+let ``fizzbuzz works`` () =
+  Assert.Equal("fizzbuzz", fizzbuzz 30)
+  Assert.Equal("buzz", fizzbuzz 20)
+  Assert.Equal("19", fizzbuzz 19)
+  Assert.Equal("fizz", fizzbuzz 18)
+
+[<Fact>]
 let ``recSearch' works`` () =
   Assert.Equal("done.", recSearch' [
     (1., 2., 0.)
